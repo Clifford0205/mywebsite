@@ -1,0 +1,497 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*RESET結束*/
+
+html{
+	font-family: 'Microsoft JhengHei',sans-serif;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    background-color: #FFD366;
+    background-attachment: fixed;
+}
+
+.wrap{
+	max-width: 100%;
+	height:100%;
+	/*padding-bottom: 20%;*/
+	/*background:  #FFD366 center center fixed;*/
+	margin: 0 auto;
+	background-color: #FFD366;
+	background-size: cover;
+}
+.header{
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+
+
+
+}
+.fixedd{
+	position: relative;
+	
+}
+
+
+.header .logo a{
+	background-image: url(../img/LOGO6.png);
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.nav{
+	position: absolute;
+	top:40px;
+	right:20px;
+}
+
+.nav ul li{
+	float: left;
+}
+
+.nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 15pt;
+	margin-left: 20px;
+	margin-right: 18px;
+	text-align: center;
+}
+
+.nav li a:hover{
+	border-bottom: 5px solid #f87c7c;
+
+}
+
+
+
+.nav span{
+	display: inline-block;
+	height: 15px;
+	border-right: 2px solid #555555;
+	
+	
+}
+
+.showmenu{
+	display: none;
+}
+
+
+
+/*headerBMI開始*/
+.headerBMI{
+	width: 100%;
+	height: auto;
+	background-color: #424242;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.headerBMI .BMIlogo{
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	
+	
+}
+
+.headerBMI .BMIlogo img{
+	width: 117px;
+	height: 117px;
+}
+
+.headerBMI ul{
+	margin: 0 auto;
+
+}
+
+.headerBMI .navBMI ul{
+	padding-top: 50px;
+}
+
+.headerBMI ul li input{
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 5px;
+
+}
+
+.headerBMI ul p{
+	font-size: 18px;
+	color: #FFD366;
+	margin-bottom: 7px;
+	text-align: center;
+}
+
+
+
+.headerBMI ul li input{
+	background: rgba(255,255,255,0.18);
+	border: 2px solid #FFD366;
+	border-radius: 10px;
+	width: 250px;
+	height: 40px;
+	outline: none;
+}
+.headerBMI ul li input::-webkit-input-placeholder {
+        color:rgba(255,255,255,80%);
+        background: 
+    }
+
+
+ .headerBMI button{
+ 	height: 120px;
+ 	width: 120px;
+ 	border-radius: 50%;
+ 	background-color: #FFD366;
+ 	position: absolute;
+ 	top: 40%;
+	left: 75%;
+ 	font-size: 24px;
+ 	color: #424242;
+ 	border: none;
+ 	cursor: pointer;
+ 	font-family: 'Microsoft JhengHei',sans-serif;
+ }
+
+.headerBMI button:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+@media(max-width: 768px){
+
+	.header{
+	width: 100%;
+	position: relative;
+	position: absolute;
+}
+
+.header .logo{
+	padding-top: 10px;
+
+}
+
+.header .logo a{
+	background-image: url(../img/LOGO7.png);
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+	.nav{
+		top: 30%;
+		width: 100%;
+	}
+
+	.items {
+    /*隱藏選單開始*/
+    max-height: 0px;
+    overflow: hidden;
+    /*隱藏選單結束*/
+    transition: max-height 2.3s;
+    margin-top: 1px;
+    /*絕對定位疊在網頁上*/
+    position: absolute;
+    z-index: 100;
+    /*header 80px+1px boder 線條*/
+    top:60px;
+    left: 30px;
+    right: 0;
+   
+    
+  }
+
+
+   .items li{
+    float: none;
+    width: 100%;
+    border-bottom: 1px dashed white;
+    text-align: center;
+    margin: 0 auto;
+ 
+  }
+
+
+  .items li span{
+  	display: none;
+  }
+
+  .nav ul li a{
+  	color: #ffffff;
+  }
+
+  .nav span{
+  	display: none;
+  }
+
+  .nav ul li a:active{
+  	color: orange;
+  }
+
+  .nav li a:hover{
+  	border-bottom: none;
+  }
+
+
+  .showmenu{
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 20px;
+
+  }
+
+   /*jQ點擊後動態在 body 加上 class */
+  .menu-show .items{
+    max-height: 500px
+  }
+  	.headerBMI {
+  		padding-top: 135px;
+  	}
+
+	.headerBMI .BMIlogo{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		margin: 0 auto;
+		
+	}
+
+	.headerBMI .navBMI ul{
+		padding-top: 20px;
+	}
+
+	.headerBMI .BMIlogo img{
+		width: 117px;
+		height: 117px;
+		margin: 0 auto;
+		display: block;
+		padding-top: 20px;
+}
+
+	.headerBMI button{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		margin: 0 auto;
+		display: block;
+		margin-top: 20px;
+
+	}
+
+}
+
+/*headerBMI結束*/
+/*main開始*/
+
+ .main{
+ 	background-color:#E2E2E2FF ;
+ 	height: auto;	
+ 	padding-bottom: 20px;
+ }
+
+ .main h2{
+ 	font-size: 24px;
+	color: #424242;
+	padding-top: 48px;
+	text-align: center;
+ }
+
+ .main ul{
+ 	padding-top: 36px;
+ }
+
+ .main ul li{
+ 	width: 624px;
+ 	height: 62px;
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	background-color: #ffffff;
+ 	margin-bottom: 16px;
+ 	padding-top: 0px;
+ 	box-sizing: border-box;
+ }
+
+ .main ul li .all{
+ 	display: inline-block;
+ 	margin-top: 21px;
+ }
+
+ .main ul li h3{
+		display: inline;
+
+	}
+
+ .main ul li .green{
+ 	background-color: #86D73F;
+ 	width: 7px;
+ 	height: 62px;
+ 	display: inline-block;
+ 	float: left;
+ }
+
+ .main ul li .blue{
+ 	background-color: #31BAF9;
+ 	width: 7px;
+ 	height: 62px;
+ 	display: inline-block;
+ 	float: left;
+ }
+
+  .main ul li .orange{
+ 	background-color: #FF6C03 ;
+ 	width: 7px;
+ 	height: 62px;
+ 	display: inline-block;
+ 	float: left;
+ }
+
+ .main ul li .red{
+ 	background-color: #FF1200 ;
+ 	width: 7px;
+ 	height: 62px;
+ 	display: inline-block;
+ 	float: left;
+ }
+
+ .main ul li .tiny{
+ 	font-size: 12px;
+	color: #424242; 
+	margin-right: 7px;
+ }
+
+ .main ul li .big{
+ 	font-size: 20px;
+	color: #4A4A4A;
+	margin-right: 42px;
+ }
+
+ @media(max-width: 768px){
+
+	.main ul li{
+		width: 310px;
+    	height: auto;
+	}
+
+	.main ul li .all{
+		display: block;
+		font-size: 8pt;
+	}
+
+	.main ul li h3{
+		display: inline-block;
+		transform: translate(-2px,8px);
+	}
+
+	.main ul li .green{
+ 	background-color: #86D73F;
+ 	width: 7px;
+ 	height: 40px;
+ 	display: inline-block;
+ 	float: left;
+ }
+
+ .main ul li .blue{
+ 	background-color: #31BAF9;
+ 	width: 7px;
+ 	height: 40px;
+ 	display: inline-block;
+ 	float: left;
+ }
+
+  .main ul li .orange{
+ 	background-color: #FF6C03 ;
+ 	width: 7px;
+ 	height: 40px;
+ 	display: inline-block;
+ 	float: left;
+ }
+
+ .main ul li .red{
+ 	background-color: #FF1200 ;
+ 	width: 7px;
+ 	height: 40px;
+ 	display: inline-block;
+ 	float: left;
+ }
+ }
+
+ /*main結束*/
+
+ .footer{
+ 	max-width: 100%;
+ 	/*margin: 0 auto;*/
+ 	/*background: #FFD366 center center fixed;
+ 	background-size: cover;*/
+ }
+
+ .footer img{
+ 	width: 55px;
+ 	margin:  auto;
+ 	padding-top: 5%;
+ 	display: block;
+ }

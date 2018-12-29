@@ -1,0 +1,1140 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*RESET結束*/
+
+
+html {
+	font-family: Arial,'Microsoft JhengHei',sans-serif;
+}
+
+.wrap{
+	max-width: 100%;
+}
+
+/*header開始*/
+
+
+
+.header{
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+
+
+
+
+}
+.fixedd{
+	position: relative;
+	
+}
+
+
+.header .logo a{
+	background-image: url(../img/LOGO6.png);
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.nav{
+	position: absolute;
+	top:40px;
+	right:20px;
+}
+
+.nav ul li{
+	float: left;
+}
+
+.nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 15pt;
+	margin-left: 20px;
+	margin-right: 18px;
+	text-align: center;
+}
+
+.nav li a:hover{
+	border-bottom: 5px solid #f87c7c;
+
+}
+
+
+
+.nav span{
+	display: inline-block;
+	height: 15px;
+	border-right: 2px solid #555555;
+	
+	
+}
+
+.showmenu{
+	display: none;
+}
+
+/*header結束*/
+
+/*KV 開始*/
+
+#slider{
+	width: 100%;
+	height: auto;
+
+}
+
+.KV-banner2{
+	display: none;
+}
+
+@media  (max-width: 767px){
+
+	.header{
+	width: 100%;
+	position: relative;
+	position: absolute;
+}
+
+.header .logo{
+	padding-top: 10px;
+
+}
+
+.header .logo a{
+	background-image: url(../img/LOGO7.png);
+	width: 80px;
+	height:80px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+	.nav{
+		top: 30%;
+		width: 100%;
+	}
+
+	.items {
+    /*隱藏選單開始*/
+    max-height: 0px;
+    overflow: hidden;
+    /*隱藏選單結束*/
+    transition: max-height 2.3s;
+    margin-top: 1px;
+    /*絕對定位疊在網頁上*/
+    position: absolute;
+    z-index: 100;
+    /*header 80px+1px boder 線條*/
+    top:60px;
+    left: 30px;
+    right: 0;
+   
+    
+  }
+
+
+   .nav ul li{
+    float: none;
+    width: 100%;
+    border-bottom: 1px dashed white;
+    text-align: center;
+    margin: 0 auto;
+ 
+  }
+
+
+  .items li span{
+  	display: none;
+  }
+
+  .nav ul li a{
+  	color: #ffffff;
+  	/*text-shadow: 0 1px black, 1px 0 black, -1px 0 black, 0 -1px black;*/
+  }
+
+  .nav span{
+  	display: none;
+  }
+
+  .nav ul li a:active{
+  	color: orange;
+  }
+
+  .nav li a:hover{
+  	border-bottom: none;
+  }
+
+
+  .showmenu{
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 20px;
+
+  }
+
+   /*jQ點擊後動態在 body 加上 class */
+  .menu-show .items{
+    max-height: 500px
+  }
+
+
+.KV-banner1{
+	display: none;
+}
+
+.KV-banner2{
+	display: block;
+}
+}
+
+
+/*KV結束*/
+
+
+/*life experence開始*/
+
+.life_experience{
+	width: 100%;
+	height: auto;
+	padding-bottom: 5%;
+	background: url(../img/網點三角板BG.png)center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.life_experience h2{
+	text-align: center;
+	font-size: 30pt;
+	padding-top: 30px;
+	
+}
+
+.life_experience img{
+	margin-left: 15%;
+}
+
+.lifetext{
+	width: 50%;
+	margin-top: 6%;
+	float: right;
+	display: block;
+	
+	
+}
+
+.life_experience p{
+	font-size: 150%;
+	margin-bottom:22%;
+	text-align: center;
+}
+
+
+.lifeformo{
+	display: none;
+}
+
+@media   (max-width: 767px){
+	.life_experience{
+		background-image: url(../img/formobile/網點背景手機板.png);
+		width: 100%;
+		height: auto;
+	}
+
+	.life_experience h2{
+		font-size: 20pt;
+		font-weight: bold;
+	}
+
+	.lifeforco{
+		display: none;
+	}
+
+
+
+	.lifeformo{
+		display: block;
+		width: 90%;
+	}
+
+	.life_experience img{
+		margin-left: 0%;
+}
+}
+
+/*life experence結束*/
+
+/*draw開始*/
+.draw{
+	position: relative;
+
+	width: 100%;
+	height: auto;
+	padding-bottom: 5%;
+	background: url(../img/繪畫BG.png) center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.draw .forco{
+	
+	
+	display: grid;
+  	grid-template-columns: repeat(5, 1fr);
+  	align-items: start;
+  	grid-gap: 1%;
+  	justify-items: center;
+  	width: 100%;	
+  	height: auto;	
+  
+	
+	
+}
+
+.draw h2{
+	text-align: center;
+	font-size: 30pt;
+	color: #ffffff;
+	
+	grid-column: 2/span 3;
+
+}
+
+
+
+.draw .forco  a{
+	    width: 100%;
+	    position: relative;
+	   /* grid-column: span 1;*/
+	    
+}
+
+
+
+.draw .forco  a:nth-child(2){
+	 grid-column: 1/span 1;
+	 margin-top: -15%;
+	 margin-left: 80%;
+}
+.draw .forco  a:nth-child(3){
+	 grid-column: 3/span 1;
+	 margin-top: 30%;
+	 margin-left: 5%;
+}
+.draw .forco  a:nth-child(4){
+	transform: translate(8%,0%);
+}
+.draw .forco  a:nth-child(5){
+	width: 80%;
+	margin-top: 40%;
+}
+.draw .forco  a:nth-child(6){
+	 grid-column: span 2;
+	 grid-row:3/span 2;
+	 margin-top: -55%;
+}
+
+
+
+
+
+.draw  i { 
+	position: absolute; 
+	top: 0; right: 0; bottom: 0; left: 0;
+  	transition: background-color .5s; 
+  	opacity: 0;
+	width: 100%;
+	margin: 0 auto;
+	line-height: 1;
+	display: grid;
+  	justify-content: center;
+  	align-content: center; 
+  	font-family: Arial Black;
+}
+
+
+
+.draw  i:hover  {
+	background-color: rgba(0, 0, 0, .6);
+	opacity: 1;
+	text-align: center;
+	color: #ffffff;
+	
+
+}
+
+ .draw .forco  .more {
+	text-decoration: none ; 
+	width: auto;
+	text-align: center;
+	display: block;
+	width: 95px;
+	margin: 0 auto;
+	margin-top: 30%;
+	/*position: absolute;
+	left: 46%;
+	bottom: 20px;*/
+	
+}
+
+.draw .more p>span{
+	border: 1px solid #ffffff;
+	height: 70%;
+	padding: 1px;
+	
+}
+
+.draw .more>p{
+	color: #ffffff;
+	font-size: 15pt;
+	border: 1px solid #ffffff;
+	width: 100%;
+	padding: 5px 0.5px 5px ;
+	white-space: nowrap;
+	
+}
+
+.formobile{
+	display: none;
+}
+
+@media   (max-width: 767px){
+
+	.draw{
+		background-image: url(../img/formobile/繪畫BG手機板.png);
+		max-width: 100%;
+		height: 750px;
+		
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+	.draw .forco{
+		display: none;
+	}
+
+	.draw .formobile{
+		display: block;
+	}
+
+	.draw h2{
+		padding-top: 30px;
+		font-size: 20pt;
+		font-weight: bold;
+	}
+	
+
+	.row1{
+		padding-top:10%;
+		width: 100%;
+		
+	}	
+
+	.row1a {
+		width:330px;
+		margin: 0 auto;
+	}
+
+	.row2{
+		padding-top:10%;
+		padding-bottom:10%;
+		width: 100%;
+		
+	}	
+
+	.row2a {
+		width:330px;
+		margin: 0 auto;
+	}
+	
+	.draw .formobile a{
+		/*width: 40%;
+		margin: 6% 4.7%;*/
+		display:inline-block;
+	}
+
+	.draw .formobile a img{
+		width: 150px;
+		height: 150px;
+		margin-left: 10px;
+	}
+
+	
+
+
+
+	.draw .formobile .more{
+				text-decoration: none;
+				text-align: center;
+				position: relative;
+				margin-top: 35px;
+				padding-bottom: 1%;
+				margin: 0 auto;
+				display: block;
+				width: 95px;
+			/*	position: absolute;
+				left: 46%;
+				bottom: 20px;*/
+	
+			}
+
+	.draw .more> p{
+		display: inline;
+		margin:0 auto;
+		color: #ffffff;
+		font-size: 15pt;
+		border: 1px solid #ffffff;
+		width: 100%;
+		padding: 5px  ;
+		white-space: nowrap;
+	}
+
+
+	.draw .more> p >span{
+		border: 1px solid #ffffff;
+		height: 70%;
+		padding: 1px;
+	
+	}
+
+}
+
+/*draw結束*/
+
+/*my_photos開始*/
+
+.my_photos .forco{
+	width: 100%;
+	height: auto;
+	padding-bottom: 3%;
+	position: relative;
+	background: url(../img/花BG.png) center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	
+}
+
+.my_photos h2{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 30pt;
+	display: block;
+	white-space: nowrap;
+	padding-top: 30px;
+	
+}
+
+.my_photos .photos{
+	display: grid;
+  	grid-template-columns: repeat(7, 1fr);
+ 	 /*grid-gap: 10px;*/
+  	align-items: start;
+  	justify-items: center;
+  	width: 100%;	
+  	height: auto;	
+  	margin-top: 20px;
+}
+
+.my_photos .photos a{
+	    width: 70%;
+	    position: relative;
+	    grid-column: span 2;
+	    line-height: 50%;
+}
+
+
+		
+
+.my_photos .photos a:nth-child(2){
+	 grid-column: span 3;
+  	 grid-row: span 2;
+  	width: 65%;
+}
+
+.my_photos .photos a img{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+
+.my_photos  i { 
+
+	position: absolute; 
+	top: 0; right: 0; bottom: 0; left: 0;
+  	transition: background-color .5s; 
+  	opacity: 0;
+	width: 100%;
+	margin: 0 auto;
+	line-height: 1;
+	display: grid;
+  	justify-content: center;
+  	align-content: center; 
+  	font-family: Arial Black;
+}
+   
+
+
+.my_photos  i:hover  {
+	background-color: rgba(0, 0, 0, .6);
+	opacity: 1;
+	text-align: center;
+	color: #ffffff;
+	
+
+}
+}
+
+.my_photos .cat i:hover{
+	width: 70%;
+	margin: 0 auto;
+}
+.my_photos .more{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    width: 95px;
+	/*position: absolute;
+	left: 46%;
+	bottom: 20px;*/
+	
+}
+
+.my_photos .more> p >span{
+	border: 1px solid black;
+	height: 70%;
+	padding: 1px;
+	
+}
+
+.my_photos .more> p{
+	color: black;
+	font-size: 15pt;
+	border: 1px solid black;
+	width: 100%;
+	padding: 5px 0.5px 5px ;
+	white-space: nowrap;
+	
+}
+
+.my_photos .formobile{
+	display: none;
+}
+
+
+
+
+@media   (max-width: 767px){
+	.my_photos .forco{
+		display: none;
+	}
+
+	.my_photos .formobile{
+		display: block;
+		width: 100%;
+		height: 700px;
+		padding-bottom: 15%;
+		background: url(../img/formobile/照片BG.png) center center fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.my_photos h2{
+		font-size: 20pt;
+		font-weight: bold;
+	}
+
+	.my_photos .more{
+				text-decoration: none;
+				text-align: center;
+				position: relative;
+				display: block;
+				left: 0%;
+				bottom: 0px;
+				margin-top: 35px;
+				padding-bottom: 1%;
+			/*	position: absolute;
+				left: 46%;
+				bottom: 20px;*/
+	
+			}
+
+	.my_photos .more> p{
+		display: inline;
+		margin:0 auto;
+		color: black;
+		font-size: 15pt;
+		border: 1px solid black;
+		width: 100%;
+		padding: 5px  ;
+		white-space: nowrap;
+	}
+
+
+	.my_photos .more> p >span{
+		border: 1px solid black;
+		height: 70%;
+		padding: 1px;
+	
+	}
+
+			
+
+	.list_carousel{
+		padding-top: 100px;
+		padding-bottom: 5%;
+
+	}	
+
+
+	.list_carousel li {
+				font-size: 40px;
+				color: #999;
+				text-align: center;
+				/*background-color: #eee;
+				border: 5px solid #999;*/
+				width: 50px;
+				height: 50px;
+				padding: 0;
+				margin: 6px;
+				display: block;
+				float: left;
+			}
+			.list_carousel.responsive {
+				width: auto;
+				margin-left: 0;
+			}
+			.clearfix {
+				float: none;
+				clear: both;
+			}
+			.prev {
+				float: left;
+				margin-left: 10px;
+			}
+			.next {
+				float: right;
+				margin-right: 10px;
+			}
+			.pager {
+				float: left;
+				width: 300px;
+				text-align: center;
+			}
+			.pager a {
+				margin: 0 5px;
+				text-decoration: none;
+			}
+			.pager a.selected {
+				text-decoration: underline;
+			}
+			.timer {
+				background-color: #999;
+				height: 6px;
+				width: 0px;
+			}
+
+
+			
+
+	
+}
+
+/*my_photos 結束*/
+
+/*banner_design 開始*/
+
+.banner_design .forco{
+		width: 100%;
+		height: auto;
+		padding-bottom: 3%;
+		position: relative;
+		background: url(../img/黑灰交錯BG.png) center center fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+}
+
+
+.banner_design h2{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 30pt;
+	display: block;
+	grid-area:title;
+	white-space: nowrap;
+	padding-top: 30px;
+	color: #ffffff;
+	text-shadow: 0 1px black, 1px 0 black, -1px 0 black, 0 -1px black;
+	grid-area: TT;
+	
+}
+
+.banner_design .mybanners{
+	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	align-items: start;
+  	grid-gap: 1%;
+  	justify-items: center;
+  	width: 100%;	
+  	height: auto;	
+  	margin-top: 20px;
+}
+
+.banner_design .mybanners a{
+	   
+	    position: relative;
+	   /* grid-column: span 1;*/
+	    
+}
+
+
+.banner_design .mybanners  a img{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+
+
+.banner_design .mybanners a:nth-child(1){
+	 grid-column: 2/span 3;
+	 width: 90%;
+  	
+}
+
+.banner_design .mybanners a:nth-child(2){
+	 grid-column: span 3;
+	 width: 100%;
+  	
+}
+
+.banner_design .mybanners a:nth-child(3){
+	grid-column:2/ span 3;
+	/*margin-top: -65%;*/
+	transform: translate(0,-105%);
+    width: 60%;
+
+}
+
+
+
+.banner_design  i { 
+	position: absolute; 
+	top: 0; right: 0; bottom: 0; left: 0;
+  	transition: background-color .5s; 
+  	opacity: 0;
+	width: 100%;
+	margin: 0 auto;
+	line-height: 1;
+	display: grid;
+  	justify-content: center;
+  	align-content: center; 
+  	font-family: Arial Black;
+}
+
+
+
+.banner_design  i:hover  {
+	background-color: rgba(0, 0, 0, .6);
+	opacity: 1;
+	text-align: center;
+	color: #ffffff;
+	height: 100%;
+}
+
+/*.banner_design .lover i:hover {
+	background-color: rgba(0, 0, 0, .6);
+	opacity: 1;
+	text-align: center;
+	color: #ffffff;
+	height: 75%;
+	width: 75%;
+	margin: 0 auto;
+}*/
+
+.banner_design .more{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 95px;
+	margin: 0 auto;
+	margin-top: -15%;
+
+	
+	
+}
+
+.banner_design .more>p>span{
+	border: 1px solid white;
+	height: 70%;
+	padding: 1px;
+	
+}
+
+.banner_design .more p{
+	color: black;
+	font-size: 15pt;
+	border: 1px solid white;
+	width: 100%;
+	padding: 5px 0.5px 5px ;
+	white-space: nowrap;
+	color: #ffffff;
+	
+}
+
+.formobile{
+	display: none;
+}
+
+
+@media (max-width: 767px){
+	.banner_design .forco{
+		display: none;
+	}
+
+	.banner_design h2{
+		font-size: 20pt;
+		font-weight: bold;
+	}
+
+	.banner_design .formobile{
+		display: block;
+		width: 100%;
+		height: 800px;
+		background: url(../img/formobile/黑灰交錯BG.png) center center fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+
+
+	.banner_design .grey img{
+		width: 200px;
+		margin: 0 auto;
+		display: block;
+		margin-top: 25px;
+	}
+
+
+	.banner_design .fast img{
+		width: 200px;
+		margin: 0 auto;
+		display: block;
+		margin-top: 25px;
+		
+	}
+
+	.banner_design .more{
+				text-decoration: none;
+				text-align: center;
+				position: relative;
+				display: block;
+				left: 0%;
+				bottom: 0px;
+				margin-top: 35px;
+			/*	position: absolute;
+				left: 46%;
+				bottom: 20px;*/
+	
+			}
+
+	.banner_design .more> p{
+		display: inline;
+		margin:0 auto;
+		color: black;
+		font-size: 15pt;
+		border: 1px solid black;
+		width: 100%;
+		padding: 5px  ;
+		white-space: nowrap;
+	}
+
+
+	.banner_design .more> p >span{
+		border: 1px solid black;
+		height: 70%;
+		padding: 1px;
+	
+	}
+
+
+}
+
+/*.banner_design結束*/
+
+/*footer開始*/
+
+.footer {
+	width: 100%;
+	height: auto;
+	padding-bottom: 5%;
+	background: url(../img/箭頭BG.png) center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.bigmap h2{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 30pt;
+	display: block;
+	white-space: nowrap;
+	padding-top: 30px;
+	
+}
+
+.whitebg{
+	background-color: #ffffff;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 35px;
+	padding: 0.5%;
+}
+
+.whitebg p{
+	font-size: 15pt;
+	padding-top: 2%;
+	margin-left: 2.5%;
+}
+
+#map{
+    height: 80vh;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+        }
+
+
+
+   @media (max-width: 767px){
+
+   	.bigmap h2{
+   		font-size: 20pt;
+   		font-weight: bold;
+   	}
+
+   	#map{
+   		height: 60vh;
+   	}
+
+   .footer {
+	width: 100%;
+	height: 650px;
+	position: relative;
+	background: url(../img/formobile/地圖BG.png) center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+   
+   }
+
+
+ /*map結束*/
+ /*footer結束*/
+
+
+
+ /*right開始*/
+
+ .right{
+ 	background-color: black;
+ 	padding-top: 40px;
+ }
+
+ .right p{
+	font-size: 15pt;
+	text-align: center;
+	
+	padding-bottom: 40px;
+	color: #ffffff;
+
+}
+
+@media (max-width: 767px){
+	.right p{
+		font-size: 8pt;
+	}
+}
+
+
+.clearfix{
+	clear: both;
+	
+}
+
+
+/*animatd*/
+
+.animated{
+	opacity:0;
+	transition:all 1.5s;
+	transform: translateY(80px);
+}
+
+.fadeIn{
+	opacity: 1;
+	transform: translateY(0);
+}
